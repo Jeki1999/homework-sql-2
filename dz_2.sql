@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS singers_musical_genre
 (
 	id SERIAL PRIMARY KEY,
 	musical_genre_id INT REFERENCES musical_genre(id),
-	singers_id INT REFERENCES singers(id),
+	singers_id INT REFERENCES singers(id)
 );
 
 CREATE TABLE IF NOT EXISTS compilation
